@@ -15,10 +15,10 @@
 static constexpr std::size_t DEFAULT_BUFFER_SIZE = 4096;
 
 int main(int argc, char **argv) {
-    const std::string exe_name = std::filesystem::path(argv[0]).filename().string();
-    std::string input_file  = "-";
-    std::string output_file = "-";
-    std::size_t buffer_size = DEFAULT_BUFFER_SIZE;
+    const std::string exe_name    = std::filesystem::path(argv[0]).filename().string();
+    std::string       input_file  = "-";
+    std::string       output_file = "-";
+    std::size_t       buffer_size = DEFAULT_BUFFER_SIZE;
 
     // parse args
     if (argc != 1) {
@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
                 std::cout << "      --help            print usage" << std::endl;
                 std::cout << "      --license         print license" << std::endl;
                 std::cout << "      --version         print version" << std::endl;
-                        return EX_OK;
+                return EX_OK;
             }
 
             if (arg == "--version") {
