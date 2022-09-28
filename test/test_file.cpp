@@ -46,5 +46,6 @@ int main() {
         }
     }
 
-    std::system("rm -f binv_test_src binv_test_dst");
+    auto tmp = std::system("rm -f binv_test_src binv_test_dst");
+    static_cast<void>(tmp);
 }
