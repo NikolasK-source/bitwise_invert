@@ -6,7 +6,7 @@
 #include <cstdlib>
 
 int main() {
-    int  result      = std::system("../Template_Project");
+    int  result      = std::system("../binv");
     auto exit_status = WEXITSTATUS(result);
     return exit_status;
 }
